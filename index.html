@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>A Van Gogh Corner</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="text-center">A Van Gogh Corner</h1>
+      <p class="description text-center">Explore the works of Vincent van Gogh</p>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="container">
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="age">Age <span class="clue">(optional)</span></label>
+          <input type="number" id="age" class="form-control" placeholder="Age" min="10" max="99">
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your interest in Vincent van Gogh?</p>
+          <select id="interest" class="form-control" required>
+            <option disabled selected value>Select your interest</option>
+            <option value="art-enthusiast">Art Enthusiast</option>
+            <option value="researcher">Researcher</option>
+            <option value="student">Student</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend exploring Vincent van Gogh's works to a friend?</p>
+          <label><input name="recommend" value="definitely" type="radio" class="input-radio" checked>Definitely</label>
+          <label><input name="recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+          <label><input name="recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+        </div>
+        <div class="form-group">
+          <p>Which of Van Gogh's artworks do you find most fascinating?</p>
+          <select id="favorite-artwork" class="form-control" required>
+            <option disabled selected value>Select your favorite artwork</option>
+            <option value="starry-night">Starry Night</option>
+            <option value="sunflowers">Sunflowers</option>
+            <option value="irises">Irises</option>
+            <option value="self-portrait">Self Portrait</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="comments">Any specific comments or thoughts about Van Gogh's art?</label>
+          <textarea id="comments" class="input-textarea" placeholder="Enter your comments here..."></textarea>
+          <small class="comment-help">Feel free to share your thoughts, critiques, or ideas!</small>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2024 A Van Gogh Corner. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
